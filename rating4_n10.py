@@ -76,11 +76,18 @@ def measure_time(search_func, data_restoran, target_rating):
 target_rating = 4.0
 
 # Dataset rating warung/restoran di sekitar telkom university berdasarkan google maps
-data_restoran = [
-    {'Nama': 'Warung A', 'Rating': 4.5},
-    {'Nama': 'Warung B', 'Rating': 3.9},
-    {'Nama': 'Warung C', 'Rating': 4.0},
-    {'Nama': 'Warung D', 'Rating': 5.0}
+# Ubah jumlah data menjadi 10, 20, 30, 50 dan 100 untuk mengetes skenario terbaik dan terburuk suatu algoritma
+data_restoran = [ #10
+    {'Nama': 'RM. PADANG MAHKOTA', 'Rating': 4.2},
+    {'Nama': 'Warkop DJOEANG', 'Rating': 4.4},
+    {'Nama': 'Baso Budi Mie Yamin & Mie Ayam Telkom', 'Rating': 4.8},
+    {'Nama': 'Tansoe Mapan', 'Rating': 3.0},
+    {'Nama': 'Diagram Coffee & Space', 'Rating': 4.8},
+    {'Nama': 'Kopi Laka Laka Telkom Bandung', 'Rating': 3.9},
+    {'Nama': 'HAUS! STT TELKOM', 'Rating': 4.3},
+    {'Nama': 'Warung Makan Pondok Titis', 'Rating': 5.0},
+    {'Nama': 'MOURISOL (Premium Risoles)', 'Rating': 5.0},
+    {'Nama': 'APM PISANG CAB TELKOM', 'Rating': 4.5}
 ]
 
 # Mengukur waktu eksekusi untuk algoritma iteratif dan rekursif
