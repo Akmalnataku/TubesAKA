@@ -63,6 +63,10 @@ if __name__ == "__main__":
     rec_results, rec_time = measure_execution_time(search_recursive, sorted_warungs, start_rating)
     print("\nHasil Pencarian Rekursif:")
     display_results(rec_results)
+    
+    # Menampilkan hasil
+    print(f"Waktu eksekusi pencarian iteratif: {iter_time:.6f} detik")
+    print(f"Waktu eksekusi pencarian rekursif: {rec_time:.6f} detik")
 
     # Menampilkan grafik waktu eksekusi
     algorithms = ["Iteratif", "Rekursif"]

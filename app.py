@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 # Dataset, Gantilah jumlah dataset ini dengan sekitar 10, 25, 50, 100(kalau ada)
 #  untuk mengetes running time pada jumlah dataset yang berbeda ()
 data = {
-    'Nama Warung': ['Warung A', 'Warung B', 'Warung C', 'Warung D', 'Warung E', 'Warung B', 'Warung C', 'Warung D', 'Warung E'],
-    'Rating': [4.5, 4.2, 4.8, 4.1, 4.3, 3.2, 3.8, 5.0, 4.3]
+    'Nama Warung': ['Warung 1', 'Warung 2', 'Warung 3', 'Warung 4', 'Warung 5', 'Warung 6', 'Warung 7', 'Warung 8', 'Warung 9', 'Warung 10'],
+    'Rating': [4.5, 4.2, 4.8, 4.1, 4.3, 3.2, 3.8, 5.0, 4.3, 5.0]
 }
 
 # Mengonversi dataset menjadi DataFrame
@@ -43,7 +43,7 @@ target_rating = 4.0
 iteratif_time = measure_time(search_iteratif, df.to_dict('records'), target_rating)
 rekursif_time = measure_time(search_rekursif, df.to_dict('records'), target_rating)
 
-# Menampilkan hasil
+# Menampilkan hasil running time setiap algoritma
 print(f"Waktu eksekusi pencarian iteratif: {iteratif_time:.6f} detik")
 print(f"Waktu eksekusi pencarian rekursif: {rekursif_time:.6f} detik")
 
